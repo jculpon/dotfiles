@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# mklinks.sh
+# Creates symlinks in the home directory for dotfiles contained here, and
+# backs up any existing dotfile into .old_dotfiles
+
+dotfiles_dir=~/dotfiles
+old_dotfiles_dir=~/.old_dotfiles
+files="bash_profile bashrc gitignore_global emacs.d/init.el"
+
+echo "Creating backup directory $old_docfiles_dir..."
+mkdir -p $old_docfiles_dir
+mkdir $old_docfiles_dir/emacs.d
+
+for file in $files; do
+	echo "Backing up $dotfiles_dir/.$file..."
+	mv ~/.$file $old_dotfiles_dir
+	echo "Linking $file..."
+	ln -s $dotfiles_dir/$file ~/$file
+done
+
