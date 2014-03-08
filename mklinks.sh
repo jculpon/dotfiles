@@ -16,6 +16,6 @@ for file in $files; do
 	echo "Backing up $dotfiles_dir/.$file..."
 	mv ~/.$file $old_dotfiles_dir
 	echo "Linking $file..."
-	ln -s $dotfiles_dir/$file ~/$file
+	ln -s $dotfiles_dir/$file ~/.$file
 done
 
