@@ -6,7 +6,7 @@
 
 dotfiles_dir=~/dotfiles
 old_dotfiles_dir=~/.old_dotfiles
-files="bash_profile bashrc gitignore_global emacs.d/init.el"
+files="bash_profile bashrc gitignore_global emacs.d/init.el bin/brew-relink.sh"
 
 echo "Creating backup directory $old_docfiles_dir..."
 mkdir -p $old_docfiles_dir
