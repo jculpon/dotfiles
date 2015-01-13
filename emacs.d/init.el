@@ -7,7 +7,7 @@
 ;; (add-to-list 'package-archives
 ;;              '("marmalade" . "http://marmalade-repo.org/packages/"))
 
-;; Initialize package so tha twe can configure stuff from installed packages
+;; Initialize package so that we can configure stuff from installed packages
 (setq package-enable-at-startup nil)
 (package-initialize)
 
