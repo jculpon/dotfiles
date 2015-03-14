@@ -52,8 +52,11 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
+ '(current-language-environment "UTF-8")
  '(custom-enabled-themes (quote (tsdh-dark)))
- '(inhibit-startup-screen t))
+ '(inhibit-startup-screen t)
+ '(text-mode-hook (quote (turn-on-auto-fill (lambda nil (flyspell-mode 1)) text-mode-hook-identify)))
+ '(tool-bar-mode nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
