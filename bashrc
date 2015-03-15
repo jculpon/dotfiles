@@ -1,5 +1,5 @@
 # Use brew binaries over system binaries
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:$PATH"
 
 # If you copy this and use homebrew, brew will give you a warning like:
 # Please note that these warnings are just used to help the Homebrew maintainers
