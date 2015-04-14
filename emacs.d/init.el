@@ -33,6 +33,7 @@
 ;; box behavior of emacs
 (setq-default c-default-style '((java-mode . "java")
                                 (awk-mode . "awk")
+                                (c++-mode . "bsd")
                                 (other . "k&r")))
 
 ;; Markdown mode
