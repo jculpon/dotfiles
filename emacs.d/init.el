@@ -51,12 +51,22 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-term-color-vector
+   [unspecified "#14191f" "#d15120" "#81af34" "#deae3e" "#7e9fc9" "#a878b5" "#7e9fc9" "#dcdddd"] t)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(current-language-environment "UTF-8")
- '(custom-enabled-themes (quote (tsdh-dark)))
+ '(cursor-type (quote bar))
+ '(custom-enabled-themes (quote (spacegray)))
+ '(fci-rule-character-color "#192028")
+ '(frame-brackground-mode (quote dark))
  '(inhibit-startup-screen t)
- '(text-mode-hook (quote (turn-on-auto-fill (lambda nil (flyspell-mode 1)) text-mode-hook-identify)))
+ '(text-mode-hook
+   (quote
+    (turn-on-auto-fill
+     (lambda nil
+       (flyspell-mode 1))
+     text-mode-hook-identify)))
  '(tool-bar-mode nil))
 
 (custom-set-faces
