@@ -3,7 +3,7 @@
 
 ;; Include MELPA for elisp packages, not just FSF-blessed ones
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/"))
+             '("melpa" . "https://melpa.org/packages/"))
 
 ;; Initialize package so that we can configure stuff from installed packages
 (setq package-enable-at-startup nil)
