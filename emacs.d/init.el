@@ -57,7 +57,10 @@
  '(cua-mode t nil (cua-base))
  '(current-language-environment "UTF-8")
  '(cursor-type (quote bar))
- '(custom-enabled-themes (quote (spacegray)))
+ '(custom-enabled-themes (quote (zenburn)))
+ '(custom-safe-themes
+   (quote
+    ("df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" default)))
  '(fci-rule-character-color "#192028")
  '(frame-brackground-mode (quote dark))
  '(inhibit-startup-screen t)
