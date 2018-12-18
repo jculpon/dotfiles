@@ -60,10 +60,13 @@
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
-    ("df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" default)))
+    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" default)))
  '(fci-rule-character-color "#192028")
  '(frame-brackground-mode (quote dark))
  '(inhibit-startup-screen t)
+ '(package-selected-packages
+   (quote
+    (zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-google-cpplint flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point)))
  '(text-mode-hook
    (quote
     (turn-on-auto-fill

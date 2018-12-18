@@ -10,6 +10,3 @@ if [[ -r BREW_COMPLETION_DIR ]]; then
      [[ -r GIT_AUTOCOMPLETE ]] && source GIT_AUTOCOMPLETE
 fi
 
-# virtualenvwrapper configuration
-export WORKON_HOME=~/python/envs
-source /usr/local/bin/virtualenvwrapper.sh
