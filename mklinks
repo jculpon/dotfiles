@@ -6,7 +6,7 @@
 
 dotfiles_dir=~/dotfiles
 old_dotfiles_dir=~/.old_dotfiles
-files="bash_profile bashrc gitignore_global emacs.d/init.el bin/brew-relink"
+files="bash_profile bashrc gitignore_global emacs.d/init.el"
 
 echo "Creating backup directory $old_docfiles_dir..."
 mkdir -p $old_docfiles_dir
@@ -18,4 +18,3 @@ for file in $files; do
 	echo "Linking $file..."
 	ln -s $dotfiles_dir/$file ~/.$file
 done
-
