@@ -1,1 +1,0 @@
-/Users/peri/.config/fish/
