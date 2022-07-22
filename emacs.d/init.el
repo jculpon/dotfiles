@@ -47,6 +47,10 @@
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ansi-term-color-vector
    [unspecified "#14191f" "#d15120" "#81af34" "#deae3e" "#7e9fc9" "#a878b5" "#7e9fc9" "#dcdddd"] t)
  '(column-number-mode t)
@@ -62,7 +66,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-google-cpplint flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point)))
+    (zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point)))
  '(text-mode-hook
    (quote
     (turn-on-auto-fill

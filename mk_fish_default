@@ -1,9 +1,11 @@
-#!/bin/csch
+#!/bin/sh
 #
 # mk_fish_default
 #
 # Makes fish shell the default shell choice for an account.
 #
 # (c) Jamie Culpon 2019. See LICENCE for more details.
+sh=$(sh)
+env=$(usr/bin/env)
 
-chsh -s /usr/local/bin/fish
+sh -s /usr/local/bin/fish
