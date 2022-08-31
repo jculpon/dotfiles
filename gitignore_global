@@ -1,3 +1,4 @@
+# ;; .gitignore for macOS/fish/zsh/not bash
 # -*- mode: gitignore; -*-
 *~
 \#*\#

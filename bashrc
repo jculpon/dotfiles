@@ -1,3 +1,4 @@
+# bash profile for brew on macOS; for ports version contact jculpon@github.com
 # Use brew binaries over system binaries
 export PATH="/usr/local/bin:$HOME/bin:$PATH"
 

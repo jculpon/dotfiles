@@ -31,6 +31,6 @@ of this license on github.
 
 Nothing in this README.md file nor the MIT License is intended to give
 you permission to use this software in violation of its license
-agreement. All rights reserved by jculpon/peri/Jamie
-Culpon. Distribution in contravention of the MIT License is strictly
+agreement. All rights reserved by jculpon@github.com (Jamie
+Culpon). Distribution in contravention of the MIT License is strictly
 prohibited.
