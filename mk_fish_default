@@ -4,8 +4,10 @@
 #
 # Makes fish shell the default shell choice for an account.
 #
-# (c) Jamie Culpon 2019. See LICENCE for more details.
+# (c) Jamie Culpon 2019-2022. See LICENCE for more details.
 sh=$(sh)
 env=$(usr/bin/env)
+# you could add a prefix here to switch between paths, but being explicit
+# has been useful during debugging startup issues with no opt/usr/local mount
 
-sh -s /usr/local/bin/fish
+sh -s /opt/local/bin/fish
