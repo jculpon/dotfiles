@@ -1,13 +1,24 @@
 #!/bin/bash
+# TODO(jculpon): update this to zsh/non-posix sh compat
 #
 # mklinks.sh
 # Creates symlinks in the home directory for dotfiles contained here, and
 # backs up any existing dotfile into .old_dotfiles
+#
+# WARNING WARNING WARNING
+# This was originally written to support moving between GNU tooled systems
+# that did not have a real zsh or csh-style shell available. It is dated.
+# It is full of horrible not quite POSIX bash-isms that will cause you grief.
+# Do not ask jculpon why this file is this way: they do not know either.
+# Someday, maybe, it will actually just have some nice switches but it
+# needs to be able to run from a ramdisk on a broken router, so uh... good
+# luck :)
 
-dotfiles_dir=~/dotfiles
-old_dotfiles_dir=~/.old_dotfiles
+dotfiles_dir=.
+old_dotfiles_dir=~/tmp/backup/old_dotfiles
 files="bash_profile bashrc gitignore_global mk_fish_default emacs.d/init.el"
 
+# TODO(jculpon): update this to better support other dirs
 echo "Creating backup directory $old_docfiles_dir..."
 mkdir -p $old_docfiles_dir
 mkdir $old_docfiles_dir/emacs.d
