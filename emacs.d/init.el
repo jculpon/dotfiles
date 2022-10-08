@@ -1,5 +1,6 @@
 ;; Packaging config
-(require 'package)
+;; TODO(jculpon): fix deprecations
+;(require 'package)
 
 ;; Include MELPA for elisp packages, not just FSF-blessed ones
 (add-to-list 'package-archives
@@ -7,7 +8,7 @@
 
 ;; Initialize package so that we can configure stuff from installed packages
 (setq package-enable-at-startup nil)
-(package-initialize)
+;(package-initialize)
 
 ;; When we've launched from OS X, slurp in PATH from our shell config
 (when (memq window-system '(mac ns))
@@ -59,12 +60,12 @@
  '(cursor-type 'bar)
  '(custom-enabled-themes '(zenburn))
  '(custom-safe-themes
-   '("a3e99dbdaa138996bb0c9c806bc3c3c6b4fd61d6973b946d750b555af8b7555b" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" default))
+   '("dea4b7d43d646aa06a4f705a58f874ec706f896c25993fcf73de406e27dc65ba" "a3e99dbdaa138996bb0c9c806bc3c3c6b4fd61d6973b946d750b555af8b7555b" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "df3e05e16180d77732ceab47a43f2fcdb099714c1c47e91e8089d2fcf5882ea3" default))
  '(fci-rule-character-color "#192028")
  '(frame-brackground-mode 'dark)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(xml+ xml-format xml-quotes xml-rpc xmlgen xmlunicode xo xonsh-mode xpm xquery-mode xquery-tool xr xref xref-js2 xref-rst xresources-theme xterm-color xterm-keybinder xtest xwidgete xwidgets-reuse xwiki-mode yaml yaml-imenu yaml-pro yaml-tomato yang-mode yoshi-theme ztree zweilight-theme minibuffer-header org-contrib org-notify sakura-theme sideline-blame sideline-flymake magit-p4 magit-stgit zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point))
+   '(ac-c-headers ac-cider ac-clang ac-emacs-eclim ac-html ac-html-angular ac-html-bootstrap ac-html-csswatcher ac-inf-ruby ac-ispell ac-js2 ac-math ac-slime actionscript-mode ada-mode ada-ref-man adafruit-wisdom autothemer autumn-light-theme cider demangle-mode rust-auto-use rust-playground auto-virtualenv auto-virtualenvwrapper auto-yasnippet auto-package-update xml+ xml-format xml-quotes xml-rpc xmlgen xmlunicode xo xonsh-mode xpm xquery-mode xquery-tool xr xref xref-js2 xref-rst xresources-theme xterm-color xterm-keybinder xtest xwidgete xwidgets-reuse xwiki-mode yaml yaml-imenu yaml-pro yaml-tomato yang-mode yoshi-theme ztree zweilight-theme minibuffer-header org-contrib org-notify sakura-theme sideline-blame sideline-flymake magit-p4 magit-stgit zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point))
  '(text-mode-hook
    '(turn-on-auto-fill
      (lambda nil
@@ -79,4 +80,4 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; end last known good update [jlc/peri]
+;; end last known good update [jculpon]
