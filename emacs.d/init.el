@@ -1,6 +1,6 @@
 ;; Packaging config
-;; TODO(jculpon): fix deprecations
-;(require 'package)
+;; TODO(jculpon): 2022/10/13 fix deprecations
+(require 'package)
 
 ;; Include MELPA for elisp packages, not just FSF-blessed ones
 (add-to-list 'package-archives
@@ -8,7 +8,7 @@
 
 ;; Initialize package so that we can configure stuff from installed packages
 (setq package-enable-at-startup nil)
-;(package-initialize)
+(package-initialize)
 
 ;; When we've launched from OS X, slurp in PATH from our shell config
 (when (memq window-system '(mac ns))
@@ -65,7 +65,7 @@
  '(frame-brackground-mode 'dark)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(ac-c-headers ac-cider ac-clang ac-emacs-eclim ac-html ac-html-angular ac-html-bootstrap ac-html-csswatcher ac-inf-ruby ac-ispell ac-js2 ac-math ac-slime actionscript-mode ada-mode ada-ref-man adafruit-wisdom autothemer autumn-light-theme cider demangle-mode rust-auto-use rust-playground auto-virtualenv auto-virtualenvwrapper auto-yasnippet auto-package-update xml+ xml-format xml-quotes xml-rpc xmlgen xmlunicode xo xonsh-mode xpm xquery-mode xquery-tool xr xref xref-js2 xref-rst xresources-theme xterm-color xterm-keybinder xtest xwidgete xwidgets-reuse xwiki-mode yaml yaml-imenu yaml-pro yaml-tomato yang-mode yoshi-theme ztree zweilight-theme minibuffer-header org-contrib org-notify sakura-theme sideline-blame sideline-flymake magit-p4 magit-stgit zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point))
+   '(org org-d20 org-dotemacs org-jira aws-snippets clojure-mode abyss-theme ac-c-headers ac-cider ac-clang ac-emacs-eclim ac-html ac-html-angular ac-html-bootstrap ac-html-csswatcher ac-inf-ruby ac-ispell ac-js2 ac-math ac-slime actionscript-mode ada-mode ada-ref-man adafruit-wisdom autothemer autumn-light-theme cider demangle-mode rust-auto-use rust-playground auto-virtualenv auto-virtualenvwrapper auto-yasnippet auto-package-update xml+ xml-format xml-quotes xml-rpc xmlgen xmlunicode xo xonsh-mode xpm xquery-mode xquery-tool xr xref xref-js2 xref-rst xresources-theme xterm-color xterm-keybinder xtest xwidgete xwidgets-reuse xwiki-mode yaml yaml-imenu yaml-pro yaml-tomato yang-mode yoshi-theme ztree zweilight-theme minibuffer-header org-contrib org-notify sakura-theme sideline-blame sideline-flymake magit-p4 magit-stgit zenburn-theme yasnippet yaml-mode wrap-region warm-night-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme toml-mode toml spacegray-theme sos solarized-theme sicp seti-theme rust-mode osx-pseudo-daemon osx-plist osx-org-clock-menubar osx-location osx-dictionary osx-clipboard osx-browse markdown-toc markdown-mode+ magit-svn magit-gh-pulls gruber-darker-theme font-utils font-lock-studio font-lock+ flyparens flymake-yaml flymake-rust flymake-ruby flymake-python-pyflakes flymake-lua flymake-json flymake-jslint flymake-google-cpplint flycheck-rust flycheck-package flycheck-clojure flycheck-cask exec-path-from-shell color-theme-solarized chinese-word-at-point))
  '(text-mode-hook
    '(turn-on-auto-fill
      (lambda nil
