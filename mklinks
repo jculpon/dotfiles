@@ -14,7 +14,7 @@
 # needs to be able to run from a ramdisk on a broken router, so uh... good
 # luck :)
 
-dotfiles_dir=.
+dotfiles_dir=~/projects/jculpon/dotfiles/
 old_dotfiles_dir=~/tmp/backup/old_dotfiles
 files="bash_profile bashrc gitignore_global mk_fish_default emacs.d/init.el"
 
