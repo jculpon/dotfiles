@@ -10,6 +10,8 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
+;; TODO(jculpon): 2022/10/13: set requires for exec-path-from-shell etc
+
 ;; When we've launched from OS X, slurp in PATH from our shell config
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
